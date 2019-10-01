@@ -1,0 +1,15 @@
+const ACTION = 'req/UPDATE';
+const CANCELED = 'CANCELED';
+const DEFAULT_REQUESTS_REDUCER_KEY = 'requests';
+const PENDING = 'PENDING';
+const REJECTED = 'REJECTED';
+const RESOLVED = 'RESOLVED';
+
+module.exports = {
+  ACTION,
+  CANCELED,
+  DEFAULT_REQUESTS_REDUCER_KEY,
+  PENDING,
+  REJECTED,
+  RESOLVED
+};

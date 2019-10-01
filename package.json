@@ -5,7 +5,9 @@
   "description": "Redux tooling for managing async request actions with react hooks. Prevent race conditions. Build responsive UIs. Rad.",
   "main": "index.js",
   "scripts": {
-    "test": "tape"
+    "lint": "eslint ./src",
+    "test": "NODE_ENV=test nyc tape '{,!(node_modules)/**/}*.test.js' | faucet && nyc report --check-coverage",
+    "test:one": "NODE_ENV=test tape"
   },
   "repository": {
     "type": "git",
@@ -15,6 +17,26 @@
   "homepage": "https://github.com/bugeats/redux-rad-requests#readme",
   "bugs": {
     "url": "https://github.com/bugeats/redux-rad-requests/issues"
+  },
+  "peerDependencies": {
+    "react": "^16.x",
+    "react-redux": "^7.x",
+    "redux": "^4.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-tape-runner": "^3.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^6.5.1",
+    "faucet": "0.0.1",
+    "jsdom": "15.1.1",
+    "jsdom-global": "3.0.2",
+    "nyc": "^14.1.1",
+    "react-dom": "^16.10.1",
+    "tape": "^4.11.0"
   },
   "keywords": [
     "actions",
