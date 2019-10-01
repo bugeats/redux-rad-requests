@@ -1,0 +1,41 @@
+{
+  "name": "redux-rad-requests",
+  "version": "1.0.0",
+  "author": "Chadwick Dahlquist",
+  "description": "Redux tooling for managing async request actions with react hooks. Prevent race conditions. Build responsive UIs. Rad.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugeats/redux-rad-requests.git"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/bugeats/redux-rad-requests#readme",
+  "bugs": {
+    "url": "https://github.com/bugeats/redux-rad-requests/issues"
+  },
+  "keywords": [
+    "actions",
+    "async",
+    "dispatch",
+    "promise",
+    "promise-middleware",
+    "react",
+    "react-hook",
+    "react-hooks",
+    "reducer",
+    "reducers",
+    "redux",
+    "redux-middleware",
+    "redux-reducer",
+    "request",
+    "requests",
+    "response",
+    "responses",
+    "selector",
+    "selectors",
+    "thunk"
+  ]
+}
