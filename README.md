@@ -200,7 +200,7 @@ function releaseTheHounds () {
     type: RELEASE_THE_HOUNDS,
     meta: { requestId: RELEASE_THE_HOUNDS }, // <-- redux-rad-requests magic here
     async payload () { // <-- redux-promise-middlware magic here
-      await openGate();
+      await dispatch(openGate());
       const hounds = await fetchHounds();
       return hounds;
     },
